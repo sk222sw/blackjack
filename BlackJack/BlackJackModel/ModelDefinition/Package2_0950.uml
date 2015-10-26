@@ -104,5 +104,121 @@
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="850165df-8bcc-40e9-a39f-d1b742fb5970"
+        name="SoftSeventeenStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="769d8744-5b04-42c2-973e-1e25a0a3cc73">
+            <interfaceMoniker
+              Id="550cd927-6beb-4715-ac7e-1afec083ec6b"
+              LastKnownName="IHitStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="41c4f6a7-bb2b-4fad-99a0-f7e14d80d697">
+            <classMoniker
+              Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
+              LastKnownName="RulesFactory"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a053d4b2-56fb-4590-9dbf-78a1dc51fda5"
+        name="IWinOnEqualStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="540213c8-9ea5-4be4-acbe-79f3cec88e89"
+        name="DealerWinsOnEqual"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="86a72d6e-9750-4ce3-b9ca-56ebadce2ccf">
+            <interfaceMoniker
+              Id="a053d4b2-56fb-4590-9dbf-78a1dc51fda5"
+              LastKnownName="IWinOnEqualStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="39a8e6ac-6e3f-4d73-bdb6-6a2876214247"
+            isDerived="false"
+            sourceEndRoleName="DealerWinsOnEqual"
+            targetEndRoleName="RulesFactory"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
+              LastKnownName="RulesFactory"
+              LastKnownLocation="Package2_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edcc3727-c78f-46c7-a200-b9439cdb3848"
+                  name="DealerWinsOnEqual"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d19fc387-6e99-4473-91af-2a5c31612aa2"
+                  name="RulesFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6b02abac-54ab-42a9-9756-d448f41292ca"
+        name="DealerWinsOnEqual"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f008276d-3300-412f-819e-8e32eeb11c30">
+            <interfaceMoniker
+              Id="a053d4b2-56fb-4590-9dbf-78a1dc51fda5"
+              LastKnownName="IWinOnEqualStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="27d24aed-a30a-440d-bde2-4b7bb1ac96e5">
+            <classMoniker
+              Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
+              LastKnownName="RulesFactory"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

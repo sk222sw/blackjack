@@ -17,7 +17,8 @@ namespace BlackJack.view
 
         public PlayChoice GetInput()
         {
-            switch (System.Console.In.Read())
+            var choice = System.Console.In.Read();
+            switch (choice)
             {
                 case 'p':
                     return PlayChoice.Play;
@@ -69,7 +70,6 @@ namespace BlackJack.view
             {
                 System.Console.WriteLine("You Won!");
             }
-            
         }
     }
 }

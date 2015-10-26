@@ -49,10 +49,12 @@ namespace BlackJack.view
         {
             DisplayHand("Spelare", a_hand, a_score);
         }
+
         public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
             DisplayHand("Croupier", a_hand, a_score);
         }
+
         public void DisplayGameOver(bool a_dealerIsWinner)
         {
             System.Console.Write("Slut: ");
