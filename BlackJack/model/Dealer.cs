@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.model
 {
-    class Dealer : Player
+    class Dealer : Player, Subject
     {
         private Deck m_deck = null;
         private const int g_maxScore = 21;
@@ -13,12 +13,14 @@ namespace BlackJack.model
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
         private rules.IWinOnEqualStrategy m_winRule;
+        private List<BlackJackObserver> m_observer = new List<BlackJackObserver>();
 
         public Dealer(rules.RulesFactory a_rulesFactory)
         {
             m_newGameRule = a_rulesFactory.GetNewGameRule();
             m_hitRule = a_rulesFactory.GetHitRule();
-            m_winRule = a_rulesFactory.GetWinOnEqualStrategy();            
+            m_winRule = a_rulesFactory.GetWinOnEqualStrategy();      
+      
         }
 
         public bool NewGame(Player a_player)
@@ -37,9 +39,22 @@ namespace BlackJack.model
         {
             if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver())
             {
-                a_player.GetCard(m_deck, true);
+                GetCard(a_player, true);
 
                 return true;
+            }
+            return false;
+        }
+        public bool Stand()
+        {
+            if (m_deck != null)
+            {
+                ShowHand();
+
+                while (m_hitRule.DoHit(this))
+                {
+                    GetCard(this, true);
+                }
             }
             return false;
         }
@@ -58,18 +73,27 @@ namespace BlackJack.model
             return false;
         }
 
-        public bool Stand()
+        public void Subscribe(BlackJackObserver observer)
         {
-            if (m_deck != null)
-            {
-                ShowHand();
+            m_observer.Add(observer);
+        }
 
-                while (m_hitRule.DoHit(this))
-                {
-                    this.GetCard(m_deck, true);
-                }
-            }
-            return false;
+        public void Unsubscribe(BlackJackObserver observer)
+        {
+            m_observer.Remove(observer);
+        }
+
+        public void NotifySubscriber()
+        {
+            m_observer.ForEach(x => x.ObserverDealCard());
+        }
+
+        public void GetCard(Player player, bool doShow)
+        {
+            Card card = m_deck.GetCard();
+            card.Show(doShow);
+            player.DealCard(card);
+            NotifySubscriber();
         }
 
     }

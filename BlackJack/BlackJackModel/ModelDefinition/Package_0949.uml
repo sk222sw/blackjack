@@ -12,12 +12,19 @@
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
-          <dependency
-            Id="d502a0d3-3cde-431e-982f-7e7d1def1445">
+          <interfaceRealization
+            Id="dd0a0631-d641-4e08-a8eb-cc15015bf6fc">
             <interfaceMoniker
               Id="24b6fd04-43bb-40bb-a319-e8f949f180eb"
               LastKnownName="BlackJackObserver"
               LastKnownLocation="Package1_0950.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="4fad0f1a-bb74-44b7-8708-8d2ed9b1b9d6">
+            <enumerationMoniker
+              Id="62e78f40-293d-462e-906c-11bbea8e9225"
+              LastKnownName="PlayChoice"
+              LastKnownLocation="BlackJackModel.uml" />
           </dependency>
         </suppliersInternal>
         <targetEnds>

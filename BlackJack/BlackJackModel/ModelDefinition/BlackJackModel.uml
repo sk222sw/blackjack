@@ -36,6 +36,13 @@
         LastKnownName="model"
         LastKnownLocation="Package1_0950.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="62e78f40-293d-462e-906c-11bbea8e9225"
+        name="PlayChoice"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

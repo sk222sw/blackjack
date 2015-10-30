@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.model
 {
-    class Player : Subscriber
+    class Player
     {
         private List<Card> m_hand = new List<Card>();
         private List<BlackJackObserver> m_observers = new List<BlackJackObserver>();
@@ -13,8 +13,6 @@ namespace BlackJack.model
         public void DealCard(Card a_card)
         {
             m_hand.Add(a_card);
-            System.Threading.Thread.Sleep(1500);
-            NotifySubscriber();
         }
 
         public IEnumerable<Card> GetHand()
@@ -60,31 +58,6 @@ namespace BlackJack.model
             }
 
             return score;
-        }
-
-        public void GetCard(Deck deck, bool doShow)
-        {
-            Card card = deck.GetCard();
-            card.Show(doShow);
-            this.DealCard(card);
-            NotifySubscriber();
-        }
-
-        public void Subscribe(BlackJackObserver a_observer)
-        {
-            m_observers.Add(a_observer);
-        }
-        public void Unsubscribe(BlackJackObserver a_observer)
-        {
-            m_observers.Remove(a_observer);
-        }
-        public void NotifySubscriber()
-        {
-            foreach (BlackJackObserver observer in m_observers)
-            {
-                observer.ObserverDealCard();
-            }
-
         }
     }
 }

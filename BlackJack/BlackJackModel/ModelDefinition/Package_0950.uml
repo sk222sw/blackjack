@@ -36,6 +36,13 @@
               LastKnownName="IView"
               LastKnownLocation="Package_0950.uml" />
           </interfaceRealization>
+          <dependency
+            Id="7adf9eeb-cbce-479e-927e-0a58f647405c">
+            <enumerationMoniker
+              Id="62e78f40-293d-462e-906c-11bbea8e9225"
+              LastKnownName="PlayChoice"
+              LastKnownLocation="BlackJackModel.uml" />
+          </dependency>
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
@@ -54,6 +61,13 @@
               LastKnownName="IView"
               LastKnownLocation="Package_0950.uml" />
           </interfaceRealization>
+          <dependency
+            Id="558afaba-f6e4-4e9e-88f6-ea1167ed4533">
+            <enumerationMoniker
+              Id="62e78f40-293d-462e-906c-11bbea8e9225"
+              LastKnownName="PlayChoice"
+              LastKnownLocation="BlackJackModel.uml" />
+          </dependency>
         </suppliersInternal>
       </class>
     </packageHasNamedElement>

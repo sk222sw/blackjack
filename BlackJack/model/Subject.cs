@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.model
 {
-    interface Subscriber
+    interface Subject
     {
         void Subscribe(BlackJackObserver a_observer);
         void Unsubscribe(BlackJackObserver a_observer);

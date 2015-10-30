@@ -73,7 +73,7 @@
     <Compile Include="model\Dealer.cs" />
     <Compile Include="model\Deck.cs" />
     <Compile Include="model\Game.cs" />
-    <Compile Include="model\Subscriber.cs" />
+    <Compile Include="model\Subject.cs" />
     <Compile Include="model\Player.cs" />
     <Compile Include="model\rules\AmericanNewGameStrategy.cs" />
     <Compile Include="model\rules\BasicHitStrategy.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="model\rules\IWinOnEqualStrategy.cs" />
     <Compile Include="model\rules\PlayerWinsOnEqual.cs" />
     <Compile Include="model\rules\RulesFactory.cs" />
-    <Compile Include="model\rules\SoftSeventeenStrategy.cs" />
+    <Compile Include="model\rules\SoftSeventeenHitStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="view\IView.cs" />

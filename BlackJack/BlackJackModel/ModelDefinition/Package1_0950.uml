@@ -310,13 +310,13 @@
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
-          <dependency
-            Id="8721d6cd-9354-4d23-b982-12debea9d2d6">
+          <interfaceRealization
+            Id="980433af-8aa4-427c-af70-85bcf21d62ec">
             <interfaceMoniker
               Id="2192885d-608e-43ce-85b1-6bcf012b32b0"
-              LastKnownName="Subscriber"
+              LastKnownName="Subject"
               LastKnownLocation="Package1_0950.uml" />
-          </dependency>
+          </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association
@@ -391,6 +391,22 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a2e1f675-0fd0-4afc-9d45-1437a7298cf3">
+            <interfaceMoniker
+              Id="2192885d-608e-43ce-85b1-6bcf012b32b0"
+              LastKnownName="Subject"
+              LastKnownLocation="Package1_0950.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="d57cc98f-eba0-4fc9-94fa-fa522ae63478">
+            <interfaceMoniker
+              Id="24b6fd04-43bb-40bb-a319-e8f949f180eb"
+              LastKnownName="BlackJackObserver"
+              LastKnownLocation="Package1_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="87296099-9a34-44e0-8455-4d19a7dd077d"
@@ -525,7 +541,7 @@
     <packageHasNamedElement>
       <Interface
         Id="2192885d-608e-43ce-85b1-6bcf012b32b0"
-        name="Subscriber"
+        name="Subject"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>

@@ -25,6 +25,8 @@ namespace BlackJack.model
             Shuffle();
         }
 
+
+
         public Card GetCard()
         {
             Card c = m_cards.First();

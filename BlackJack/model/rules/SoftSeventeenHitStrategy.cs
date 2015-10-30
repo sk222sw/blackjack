@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    class SoftSeventeenStrategy : IHitStrategy
+    class SoftSeventeenHitStrategy : IHitStrategy
     {
         private const int g_hitLimit = 17;
 
@@ -15,14 +15,14 @@ namespace BlackJack.model.rules
         public bool DoHit(model.Player a_dealer)
         {
             IEnumerable<Card> cards = a_dealer.GetHand();
-
+            
             if (a_dealer.CalcScore() == g_hitLimit)
             {
                 foreach (var c in cards)
                 {
                     if (c.GetValue() == Card.Value.Ace)
                     {
-                        return true;
+                        return false;
                     }
                 }
             }

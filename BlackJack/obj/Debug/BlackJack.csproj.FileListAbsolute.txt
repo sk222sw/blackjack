@@ -3,3 +3,8 @@ C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\blackjack_csharp-master\BlackJack
 C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
 C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.exe
 C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\After peer review\blackjack\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\After peer review\blackjack\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\After peer review\blackjack\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\After peer review\blackjack\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\Sonny\Documents\Plugg\OOAD\Workshop 3\After peer review\blackjack\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
